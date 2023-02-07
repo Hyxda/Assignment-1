@@ -11,7 +11,7 @@ def dice():
     roll = random.randint(2, 12)
     return roll
 
-# Creates main battle logistics
+# Creates main battle function with battle logistics
 def battle():
     """
     This function uses the dice function to determine the user's roll number (2 -> 12),
@@ -21,7 +21,7 @@ def battle():
     to be False, the game ends, otherwise if the challenge is won, the game proceeds to
     the next challenge. User must win 3/3 challenges to beat the game.
     """
-    win = True:
+    win = True
     while win == True:
         roll = roll()
         if roll <= 3:
