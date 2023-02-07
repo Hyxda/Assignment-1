@@ -4,6 +4,7 @@ ninja_magic = 1
 ninja_stealth = 3
 ninja_intelligence = 2
 
+# Iniitalize ninja function
 def ninja():
     """
     This function returns the string "ninja" & is used for character selection.
