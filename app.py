@@ -23,11 +23,9 @@ def choose_character():
         input(
             """
             Choose your path, will you be a mage or a ninja?
-            \n Mage  | Mages are more skillful in magic. | Magic = {} / Stealth = {} / Intelligence = {}
+            \n Mage  | Mages are more skillful in magic.    | Magic = {} / Stealth = {} / Intelligence = {}
             \n Ninja | Ninjas are more skillful in stealth. | Magic = {} / Stealth = {} / Intelligence = {}
-            \n >
-            """
-            .format(role1.mage_magic, role1.mage_stealth, role1.mage_intelligence, role2.ninja_magic, role2.ninja_stealth, role2.ninja_intelligence))
+            """.format(role1.mage_magic, role1.mage_stealth, role1.mage_intelligence, role2.ninja_magic, role2.ninja_stealth, role2.ninja_intelligence))
         if character == "mage":
             print("You have selected the mage.")
             return role1.mage()
