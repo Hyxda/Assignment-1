@@ -40,3 +40,4 @@ def battle():
         else:
             health += 1
             print("You rolled {}. Health increased to {}. Moving to next challenge!".format(roll, health))
+            return True
