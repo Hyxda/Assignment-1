@@ -7,8 +7,7 @@ def welcome():
     """
     This function welcomes the user to the game & provides an overview of challenges!
     """
-    welcome_msg = print("Welcome to Ninja vs Mages!")
-    return welcome_msg
+    print("Welcome to Ninjas vs Mages!")
 
 # Create Character Choice function
 def choose_character():
