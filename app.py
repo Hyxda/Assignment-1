@@ -2,6 +2,11 @@
 import role1
 import role2
 
+# Create Welcome function
+def welcome():
+    welcome_msg = print("Welcome to Ninja vs Mages!")
+    return welcome_msg
+
 # Create Character Choice function
 def choose_character():
     """
