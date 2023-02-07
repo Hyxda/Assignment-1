@@ -22,27 +22,3 @@ def choose_character():
         else:
             print("You have input an incorrect option, please re-try.")
             choose_character()
-
-# Create Character Assign function
-def character_assign():
-    """
-    This function initializes battle stats & sets the user's character choice 
-    to character & assigns the role's respective battle attributes.
-    """
-    character = choose_character(role1, role2)
-    health = 0
-    magic = 0
-    stealth = 0
-    intelligence = 0
-
-    if character == "mage":
-        health += role1.mage_health
-        magic += role1.mage_magic
-        stealth += role1.mage_stealth
-        intelligence += role1.mage_intelligence
-    else:
-        health += role2.ninja_health
-        magic += role2.ninja_magic
-        stealth += role2.ninja_stealth
-        intelligence += role2.ninja_intelligence
-        
