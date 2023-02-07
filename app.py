@@ -1,8 +1,6 @@
 # Import Ninja & Mage roles
 import role1
 import role2
-from role1 import mage_health, mage_magic, mage_stealth, mage_intelligence
-from role2 import ninja_health, ninja_magic, ninja_stealth, ninja_intelligence
 
 # Create Character Choice function
 def choose_character():
@@ -38,12 +36,13 @@ def character_assign():
     intelligence = 0
 
     if character == "mage":
-        health += mage_health
-        magic += mage_magic
-        stealth += mage_stealth
-        intelligence += mage_intelligence
+        health += role1.mage_health
+        magic += role1.mage_magic
+        stealth += role1.mage_stealth
+        intelligence += role1.mage_intelligence
     else:
-        health += ninja_health
-        magic += ninja_magic
-        stealth += ninja_stealth
-        intelligence += ninja_intelligence
+        health += role2.ninja_health
+        magic += role2.ninja_magic
+        stealth += role2.ninja_stealth
+        intelligence += role2.ninja_intelligence
+        
