@@ -51,12 +51,12 @@ def battle():
     while win == True:
         roll = roll()
         if roll <= 3:
-            health -= 1
+            health = 0
             magic -= 1
             print("You rolled {}. Critical Loss! Health lowered to {}. Game Over.".format(roll, health))
             return False
         elif roll <= 7:
-            health -= 1
+            health = 0
             print("You rolled {}. Loss! Health lowered to {}. Game Over.".format(roll, health))
             return False
         elif roll <= 10:
@@ -67,3 +67,4 @@ def battle():
             health += 1
             print("You rolled {}. Health increased to {}. Moving to next challenge!".format(roll, health))
             return True
+        
