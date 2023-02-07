@@ -7,8 +7,8 @@ from app import choose_character
 # Create Character Assign function
 def character_assign():
     """
-    This function initializes battle stats & sets the user's character choice 
-    to character & assigns the role's respective battle attributes.
+    This function initializes battle stats from app.py (choose character()) import & sets the 
+    user's character choice to character & assigns the role's respective battle attributes.
     """
     character = choose_character(role1, role2)
     health = 0
