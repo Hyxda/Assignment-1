@@ -1,6 +1,7 @@
 # Import Ninja & Mage roles
 import role1
 import role2
+import time
 
 # Create Welcome function
 def welcome():
@@ -28,10 +29,9 @@ def choose_character():
     while character.lower() != "mage" or character.lower() != "ninja":
         character = input(
             """
-            Choose your path, will you be a mage or a ninja?
-            \n Mage  | Mages are more skillful in magic.    | Magic = {} / Stealth = {} / Intelligence = {}
-            \n Ninja | Ninjas are more skillful in stealth. | Magic = {} / Stealth = {} / Intelligence = {}
-            """.format(role1.mage_magic, role1.mage_stealth, role1.mage_intelligence, role2.ninja_magic, role2.ninja_stealth, role2.ninja_intelligence))
+            [ Choose your path, will you be a mage or a ninja? ]
+            \n 'Mage'  | Mages are more skillful in magic.    | Magic = {} / Stealth = {} / Intelligence = {}
+            \n 'Ninja' | Ninjas are more skillful in stealth. | Magic = {} / Stealth = {} / Intelligence = {} \n \n > """.format(role1.mage_magic, role1.mage_stealth, role1.mage_intelligence, role2.ninja_magic, role2.ninja_stealth, role2.ninja_intelligence))
         if character.lower() == "mage":
             print("You have selected the mage.")
             return role1.mage()
@@ -44,4 +44,6 @@ def choose_character():
 
 # Introduce user to game with welcome() function
 welcome()
+seconds = 2
+time.sleep(seconds)
 choose_character()
