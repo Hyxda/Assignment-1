@@ -2,7 +2,7 @@
 import random
 import role1
 import role2
-from app import choose_character
+from game import choose_character, roll_input
 
 # Create Character Assign function
 def character_assign():
@@ -67,4 +67,3 @@ def battle():
             health += 1
             print("You rolled {}. Health increased to {}. Moving to next challenge!".format(roll, health))
             return True
-        

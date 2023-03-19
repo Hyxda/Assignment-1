@@ -1,7 +1,8 @@
 # Import Ninja & Mage roles
+import time
 import role1
 import role2
-import time
+from battle import *
 
 # Sleep Module
 def sleep():
@@ -51,7 +52,17 @@ def choose_character():
             print("\n You have input an incorrect option, please re-try.")
             choose_character()
 
+# Function for whether user would like to roll
+def roll_input():
+    roll_input = input("Would you like to role the dice? (Y/N): ")
+    if roll_input.lower() == 'y':
+        print("You rolled the dice!")
+    else:
+        print("You have ended the game. See you next time!")
+
+
 # Introduce user to game with welcome() function
 welcome()
 sleep()
 choose_character()
+roll_input()
